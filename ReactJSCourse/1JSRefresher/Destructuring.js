@@ -5,9 +5,14 @@ const greetings = ['Good morning!', 'Good night.'];
 console.log(greeting);
 console.log(goodbye);
 
+
+//properties from objects are targeted by their property name
 const Cameron = {
     fName: 'Cameron',
     age: 23,
     lName: 'Thorp'
-}
+};
 
+({fName, age} = {fName: 'Cameron', age: 23, });
+console.log(fName);
+console.log(age);
